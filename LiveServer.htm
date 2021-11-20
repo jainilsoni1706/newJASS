@@ -19,7 +19,7 @@
 </div>
 <div class="container_Of-theLive_Server-x">
     <div class="left_container-of_th__LiveServer-x">
-        <textarea class="textare_the--class_of--Editor_x" style="overflow:scroll;"></textarea>
+        <textarea onkeyup="run_code__html_editor1()" class="textare_the--class_of--Editor_x" style="overflow:scroll;"></textarea>
     </div>
     <div class="right_container-of_th__LiveServer-x"  style="overflow:scroll;"></div>
 </div>
@@ -128,6 +128,11 @@ document.addEventListener('contextmenu', function(e) {
 let input_var_of___Editor = document.querySelector('.textare_the--class_of--Editor_x');
 
 run_code__html_editor = () => {
+document.querySelector('.right_container-of_th__LiveServer-x').innerHTML = input_var_of___Editor.value;
+}
+
+
+run_code__html_editor1 = () => {
 document.querySelector('.right_container-of_th__LiveServer-x').innerHTML = input_var_of___Editor.value;
 }
 
